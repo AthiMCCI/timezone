@@ -1,1 +1,1 @@
-# timezone.html
+# timezone

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+      <head>
+             <title>Athi</title>
+             <h3>Select the timezone and see the time</h3>
+             </head>
+             <body>
+                <form>
+
+               <select id="mySelect" onchange="myFunction()">
+
+                 <option value="ECT">European Central Time</option>
+                 <option value="EET">Eastern European Time</option>
+                 <option value="EST">(Arabic) Egypt Standard Time</option>
+                 <option value="EAT">Eastern African Time</option>
+                 <option value="NET">Near East Time </option>  
+                 <option value="PLT">Pakistan Lahore Time</option> 
+                 <option value="IST">India Standard Time	 </option> 
+                 <option value="BST">Bangladesh Standard Time </option> 
+                 <option value="VST">Vietnam Standard Time </option> 
+                 <option value="CTT">China Taiwan Time </option> 
+                 <option value="JST">Japan Standard Time </option> 
+                 <option value="ACT">Australia Central Time </option> 
+                 <option value="AET">Australia Eastern Time </option> 
+                 <option value="SST">Solomon Standard Time </option> 
+                 <option value="NST"> New Zealand Standard Time</option> 
+                 <option value="MST"> Midway Islands Time</option> 
+                 <option value="HST">Hawaii Standard Time</option> 
+                 <option value="AST">Alaska Standard Time</option> 
+                 <option value="PNT"> Phoenix Standard Time</option> 
+                 <option value="MST"> Mountain Standard Time</option> 
+                 <option value="CST">Central Standard Time</option> 
+                 <option value="EST"> Eastern Standard Time</option> 
+                 <option value="IET">Indiana Eastern Standard Time</option> 
+                 <option value="PRT"> Puerto Rico and US Virgin Islands Time</option> 
+                 <option value="CNT">Canada Newfoundland Time</option> 
+                 <option value="AGT">Argentina Standard Time</option> 
+                 <option value="BET">Brazil Eastern Time</option> 
+                 <option value="CAT">Central African Time</option> 
+                
+
+
+ </select>
+    </form>
+     <p id="demo"></p>
+     <script>
+                     function myFunction() {
+  var x = document.getElementById("mySelect");
+ 
+  var i = x.selectedIndex;
+ 
+  var selectop = x.options[i].text;
+  if(x.value=="ECT"){
+              var dt = new Date();
+             dt.setHours( dt.getHours() - 4 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    }
+    else if(x.value=="EET"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() - 4 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    }
+
+    else if(x.value=="EST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() - 4 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    }   
+    else if(x.value=="EAT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() - 6 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+     
+    else if(x.value=="NET"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() - 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="PLT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 0 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="IST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 0 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="BST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 1 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="VST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 2 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="CTT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 3 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="JST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 4 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="ACT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 4 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="AET"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 2 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="SST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours()  +05);
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="NST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="MIT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="HST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 9 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="AST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 10 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="PNT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 12 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="MST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 13 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="CST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 2 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="EST"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 2  );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="IET"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 0 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="PRT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="CNT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="AGT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="BET"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+    else if(x.value=="CAT"){
+        var dt = new Date();
+             dt.setHours( dt.getHours() + 7 );
+             document.getElementById("demo").innerHTML = dt.toLocaleString();
+    } 
+
+
+}
+           </script>
+          </body>
+        </html>
+
+
+
+
